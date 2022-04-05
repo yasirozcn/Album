@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    height: 95vh;
+    flex: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    border-radius: 50px;
+    margin: 10px;
+    transition: flex 2s ease-in ;
+
+}
+
+.panel h3{
+    position: absolute;
+    font-size: 3rem;
+    color: rgb(10, 64, 112);
+    bottom: 40px;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.3 s ease-in 0.4 s ;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+}
